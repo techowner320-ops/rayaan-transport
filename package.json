@@ -1,0 +1,15 @@
+{
+  "name": "rayaan-transport-system",
+  "version": "1.0.0",
+  "description": "RAYAAN Transportation & Logistics \u2014 accounting and management system",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "deploy": "git push origin \"$(git subtree split --prefix public HEAD)\":gh-pages --force"
+  }
+}
